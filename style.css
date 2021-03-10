@@ -1,0 +1,232 @@
+/*
+	Theme Name: GenYeh
+	Description: Product by 2.5D Studio
+	Author: 2.5D Studio
+	Author URI: https://www.studio2point5d.com/
+	Version: 1.0
+	Tags: offical page
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/********************
+Width
+********************/
+body {
+	margin: 0;
+	font-family: sans-serif;
+	color: #262626;
+}
+
+.wrapper-size {
+	padding: 0 20px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main > *:not(.alignright):not(.alignleft):not(.alignfull) {
+	width: calc(100% - 80px);
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/********************
+Colors
+********************/
+:root .has-white-background-color {
+	background-color: #FFFFFF;
+}
+
+:root .has-white-color {
+	color: #FFFFFF;
+}
+
+:root .has-black-background-color {
+	background-color: #000000;
+}
+
+:root .has-black-color {
+	color: #000000;
+}
+
+:root .has-blue-background-color {
+	background-color: #063D82;
+}
+
+:root .has-blue-color {
+	color: #063D82;
+}
+
+:root .has-red-background-color {
+	background-color: #C92E2A;
+}
+
+:root .has-red-color {
+	color: #C92E2A;
+}
+
+:root .has-yellow-background-color {
+	background-color: #FACF0D;
+}
+
+:root .has-yellow-color {
+	color: #FACF0D;
+}
+
+:root .has-gray-background-color {
+	background-color: #595959;
+}
+
+:root .has-gray-color {
+	color: #595959;
+}
+
+/********************
+Header
+********************/
+#header {
+	padding: 15px 20px;
+}
+
+/********************
+Footer
+********************/
+#footer {
+	padding: 12px 20px;
+}
+
+/********************
+Contact
+********************/
+#contact {
+	min-height: calc(100vh - 84px - 45px);
+	box-sizing: border-box;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#wpadminbar ~ #contact {
+	min-height: calc(100vh - 84px - 45px - 32px);
+}
+
+/********************
+Login
+********************/
+.login-wrapper {
+	display: flex;
+	align-items: center;
+	background-size: cover;
+}
+
+#loginform {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+	padding: 26px 24px 36px;
+	width: 320px;
+	box-sizing: border-box;
+}
+
+#loginform label {
+	font-size: 14px;
+	line-height: 1.5;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+#loginform input[type="text"],
+#loginform input[type="password"] {
+	font-size: 24px;
+	line-height: 1.33333333;
+	width: 100%;
+	border-width: .0625rem;
+	padding: .1875rem .3125rem;
+	min-height: 40px;
+	max-height: none;
+	box-sizing: border-box;
+	border: .0625rem solid #7e8993;
+	border-radius: 4px;
+}
+
+#loginform input[type="text"]:focus,
+#loginform input[type="password"]:focus {
+	outline-color: #007cba;
+}
+
+#loginform input[type="submit"] {
+	background: #007cba;
+	border: 1px solid #007cba;
+	color: #fff;
+	border-radius: 4px;
+	float: right;
+	min-height: 32px;
+	line-height: 2.30769231;
+	padding: 0 12px;
+	cursor: pointer;
+}
+
+#loginform input[type="submit"]:hover {
+	background: #0071a1;
+	border-color: #0071a1;
+	color: #fff;
+}
+
+/********************
+Link
+********************/
+#contact a {
+	color: #0071a1;
+}
+
+/********************
+Title
+********************/
+.page-title {
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+}
+
+/********************
+Heading
+********************/
+#contact h2 {
+	font-size: 2em;
+	color: #063D82;
+}
+
+#contact h3 {
+	font-size: 1.5em;
+	color: #595959;
+}
+/********************
+Table
+********************/
+.wp-block-table table {
+	border-collapse: collapse;
+}
+
+.wp-block-table thead {
+	border-bottom: 3px solid #000;
+}
+
+.wp-block-table td, .wp-block-table th {
+	padding: 12px 15px;
+}
+
+.wp-block-table:not(.is-style-stripes) td, .wp-block-table:not(.is-style-stripes) th {
+	border: 1px solid #000;
+}
+
+/********************
+Embber
+********************/
+.aligncenter.wp-block-embed {
+	text-align: center;
+}
+
+.alignright.wp-block-embed {
+	text-align: right;
+}
