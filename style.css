@@ -95,6 +95,7 @@ Footer
 ********************/
 #footer {
 	padding: 12px 20px;
+	clear: both;
 }
 
 /********************
@@ -105,6 +106,8 @@ Contact
 	box-sizing: border-box;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	float: left;
+	width: 83%;
 }
 
 #wpadminbar ~ #contact {
@@ -183,10 +186,30 @@ Link
 /********************
 Title
 ********************/
+#visual {
+	background-size: cover;
+	position: relative;
+	min-height: 150px;
+}
+
+#visual:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000;
+	opacity: 0.5;
+	top: 0;
+}
+
 .page-title {
 	min-height: 150px;
 	display: flex;
 	align-items: center;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 /********************
@@ -229,4 +252,67 @@ Embber
 
 .alignright.wp-block-embed {
 	text-align: right;
+}
+
+/********************
+Height
+********************/
+.wp-block-image img {
+	height: auto
+}
+
+/********************
+Menu
+********************/
+#menu-header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#menu-header li {
+	list-style: none;
+	margin-left: 10px;
+}
+
+a {
+	transition: opacity 0.3s;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+/********************
+Quick
+********************/
+#quick {
+	float: right;
+	width: 15%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 20px;
+}
+
+#quick ul {
+	padding-left: 0;
+}
+
+#quick li {
+	list-style: none;
+	text-align: left;
+	background: #eee;
+	border-bottom: 1px solid #888;
+}
+
+#quick li a {
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#quick li a:after {
+	content: "\f344";
+	font-family: dashicons;
 }

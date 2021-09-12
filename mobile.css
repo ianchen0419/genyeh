@@ -1,0 +1,16 @@
+#menu-header {
+	display: none;
+}
+
+.custom-logo-link img {
+	width: 100%;
+	height: auto;
+}
+
+#quick {
+	display: none;
+}
+
+#contact {
+	width: 100%;
+}

@@ -133,6 +133,23 @@ function custom_columns($column){
 add_action('manage_posts_custom_column' , 'custom_columns');
 
 /********************
+カスタマイズメニュー有効化
+********************/
+function register_my_menu() {
+	$locations = array(
+		'header'  => 'header',
+		'quick'  => 'quick',
+	);
+	register_nav_menus($locations);
+}
+add_action('init', 'register_my_menu');
+
+/********************
+全幅ブロック有効化
+********************/
+add_theme_support('align-wide');
+
+/********************
 フォントサイズ設定
 ********************/
 // add_theme_support('editor-font-sizes', array(

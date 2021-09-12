@@ -10,10 +10,15 @@
 		wp_redirect(home_url(''));
 	}
 
+	$thumbnail;
+	if(has_post_thumbnail()) {
+		$thumbnail="background: url(".get_the_post_thumbnail_url().")";
+	}
+
 ?>
 <?php get_header();?>
 
-<div id="visual" class="has-blue-background-color">
+<div id="visual" class="has-blue-background-color" style="<?php echo $thumbnail; ?>">
 	<div class="page-title">
 		<div class="wrapper-size">
 			<h1 class="has-white-color has-text-align-center has-large-font-size"><?php the_title(); ?></h1>

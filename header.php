@@ -12,6 +12,18 @@
 <?php wp_footer(); ?>
 
 <header id="header">
-	<?php the_custom_logo(); ?>
-	<h1 hidden><?php bloginfo('name') ?></h1>
+	<table width="100%">
+		<tr>
+			<td>
+				<?php the_custom_logo(); ?>
+				<h1 hidden><?php bloginfo('name') ?></h1>
+			</td>
+			<td align="right">
+				<nav>
+					<?php wp_nav_menu(array('theme_location' => 'header')); ?>
+				</nav>
+			</td>
+		</tr>
+	</table>
+	
 </header>
