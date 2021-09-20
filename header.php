@@ -20,7 +20,12 @@
 			</td>
 			<td align="right">
 				<nav>
-					<?php wp_nav_menu(array('theme_location' => 'header')); ?>
+					<?php
+						if(is_user_logged_in()){
+							wp_nav_menu(array('theme_location' => 'header')); 	
+						}
+						
+					?>
 				</nav>
 			</td>
 		</tr>
