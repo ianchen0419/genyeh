@@ -138,7 +138,6 @@ add_action('manage_posts_custom_column' , 'custom_columns');
 function register_my_menu() {
 	$locations = array(
 		'header'  => 'header',
-		'quick'  => 'quick',
 	);
 	register_nav_menus($locations);
 }

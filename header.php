@@ -21,7 +21,7 @@
 			<td align="right">
 				<nav>
 					<?php
-						if(is_user_logged_in()){
+						if(is_user_logged_in() && is_front_page()==false){
 							wp_nav_menu(array('theme_location' => 'header')); 	
 						}
 						
