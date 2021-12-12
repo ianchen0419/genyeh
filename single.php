@@ -2,7 +2,7 @@
 	$user=wp_get_current_user();
 	$meta_info=get_post_meta($post->ID, 'user', true);
 	$user_login=$user->user_login;
-	if(user_can($user, 'administrator')==true){
+	if(user_can($user, 'administrator')==true || user_can($user, 'author')==true){
 
 	}else if($user_login==$meta_info){
 		

@@ -32,7 +32,7 @@
 					$user=wp_get_current_user();
 					$user_login=$user->user_login;
 					$arg='';
-					if(user_can($user, 'administrator')){
+					if(user_can($user, 'administrator') || user_can($user, 'author')){
 						$arg=array();
 					}else{
 						$arg=array(
